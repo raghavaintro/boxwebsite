@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animation Video</title>
+<style>
+  /* Define styles for the animation */
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 255, 76);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: move 2s infinite alternate;
+  }
+
+  /* Define the animation */
+  @keyframes move {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+</style>
+</head>
+<body>
+  <!-- Create an element to animate -->
+  <div class="box"></div>
+
+  <!-- You can add more elements and style them accordingly for your video -->
+</body>
+</html>
